@@ -21,7 +21,7 @@ class LambdaTracingRule(CloudFormationLintRule):
     source_url = "https://awslabs.github.io/serverless-rules/rules/lambda/tracing/"
     tags = ["lambda"]
 
-    _message = "Lambda function {} should have TracingConfig.Mode set to 'Active'."
+    _message = "Lambda function {} should have Tracing property set to 'Active'."
 
     def match(self, cfn):
         """
